@@ -1,2 +1,2 @@
-# talented10th-api
+# Talented Tenth Frontend-API
 HBCU Listings
