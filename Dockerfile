@@ -10,7 +10,7 @@ WORKDIR /app
 COPY package.json package.json
 COPY package-lock.json package-lock.json
 
-# specify test build
+# specify build
 FROM base as prod
 
 # clean dependancy install excluding dev dependancies
@@ -23,12 +23,5 @@ COPY . .
 #expose the port in the docker container
 EXPOSE 3000
 
-<<<<<<< HEAD
 # the command to start our app
 CMD [ "npm", "start" ]
-=======
-RUN node seed.js
-
-# the command to start our app
-CMD [ "npm", "start" ]
->>>>>>> 5a27a9435a0f41b0d866baf44b42338ed84da292
