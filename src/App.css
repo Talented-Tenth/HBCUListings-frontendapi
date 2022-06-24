@@ -1,0 +1,297 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #525357;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+  
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.blink_me {
+  animation: blinker 4s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+/* Project CSS */
+
+.body-height{
+  min-height: 100vh;
+ }
+ 
+ .Navbar-container{
+   display:flex;
+ }
+ 
+ .logo-slogan{ 
+   display:flex;
+   margin-top:20px;
+ }
+ .slogan-margin{
+   margin-top: 80px;
+ }
+ 
+ .slogan-italic{
+   margin-top:80px;
+   font-style:italic;
+   font-weight:bold;
+   font-size:1.25em;
+ }
+ 
+ .logo-b-margin{
+   margin-bottom:100px;
+ }
+ 
+ .Card-custom {
+   background-color: darkblue !important;
+   
+ }
+ .card1-width{
+   width:60%;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ 
+ .Pro-img-size{
+   width: 100%;
+ }
+ 
+ .Searchbar-container{
+   background-color: rgb(213, 213, 240);
+   min-height: 400px;
+   width:70%;
+   min-width:300px;
+   max-width:1200px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top:50px;
+   margin-bottom: 100px;
+ }
+ 
+ .Search-header-container{
+   display:flex;
+   justify-content:center;
+   margin-top:30px;
+ }
+ .Search-header{
+   border:1px solid;
+   border-radius: 10px;
+   height:95px;
+   width:382px;
+   background-color:#70cf36;;
+   color:white;
+   padding-top: .25in;
+   text-align: center;
+ 
+ }
+
+.sub_div {
+    position: absolute;
+    bottom: 0px;
+}
+ 
+ .Dropdown-content  {
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   color:darkblue;
+   font-weight:500;
+ }
+ 
+ 
+ .School{
+   margin:0 20px;
+ }
+ 
+ .SchoolDetail{
+   margin-top: 90px;
+   color: #61dafb;
+ }
+ 
+ 
+ /* ******************************* */
+ 
+ .Card-custom {
+     background-color: rgb(1, 7, 92) !important;
+     align-items: center;
+   }
+ .Head {
+     background-color: rgb(228, 213, 44) !important;
+     
+   }
+ 
+   .Accordion-container {
+     align-items: center;
+     margin-top: 70px;
+     margin-bottom: 50px;
+     justify-content: center;
+     display: flex;
+   }
+   
+   .Accordion-size {
+     width: 70%;
+   }
+   
+   .Accordion-body {
+     text-align: left;
+   }
+   .Accordion-text {
+     font-size: 1.25em;
+   }
+
+ /* ******************************* */
+
+   * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Josefin Slab", serif;
+}
+
+/* .container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.3)),
+    url(./denim.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.card {
+    width: 660px;
+    height: 660px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.sides {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.7)),
+    url(./elegant-white-texture-design-background-vector.jpg) no-repeat;
+    background-size: cover;
+    background-position-x: 0;
+    width: 50%;
+    height: 100%;
+    transform: rotateY(0deg);
+    transform-origin: left;
+    transition: transform 1s;
+ }
+
+.right-side {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.7)),
+    url(./elegant-white-texture-design-background-vector.jpg)  no-repeat;
+    background-size: cover;
+    background-position-x: -180px;
+    width: 50%;
+    height: 100%;
+    transform: rotateY(0deg);
+    transform-origin: right;
+    transition: transform 1s;
+}
+    
+.back-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(247, 244, 244, 0.1),
+    rgba(231, 225, 225, 0.1)),
+    url(./White_Gold_Logo2.JPG) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display:  flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: -1;
+    transform: translateZ(-300px);
+    box-shadow: 40px 40px 80px rgb(227, 221, 221);
+    transition: z-index 0.4s step-end, transform 1s,
+    box-shadow 1s;
+}
+
+.card:hover .left-side {
+    transform: rotateY(-360deg);
+}
+
+.card:hover .right-side {
+    transform: rotateY(360deg);
+}
+
+.card:hover .back-side {
+    transform: translateZ(0);
+    z-index: 1;
+    box-shadow: 50px 50px 100px #000;
+}
+
+.name {
+    color: #fff;
+    font-size: 35px;
+    margin: 20px 5px;
+}
+
+.school {
+    color: #eee;
+    font-size: 25px;
+    margin: 20px 5px;
+}
+
+.left-side .name,
+.left-side .School {
+   text-align: right;
+}
+
+.biography {
+    color: #fff;
+    font-size: 22px;
+    background: rgba(0, 0, 0, 0.4);
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    Margin-bottom: 10px;
+}
